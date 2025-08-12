@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Puño de Dragón</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Playfair Display y Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado fijo -->
+    <header class="header-fixed">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="El Puño de Dragón" height="65">
+                <span class="titulo-oriental">El Puño de Dragón</span>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Nuestra Historia</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#carta">Nuestra Carta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio / Portada con efecto Parallax -->
+    <section id="inicio" class="hero-section parallax-bg">
+        <div class="hero-portada-flex">
+            <div class="hero-content hero-content-portada">
+                <h1 class="animate-glow portada-titulo-grande">Sabores que despiertan leyendas</h1>
+                <p class="hero-sub portada-sub-grande">Tradición, calidad y pasión por la gastronomía china.</p>
+                <a href="#carta" class="btn-hero">Ver Nuestra Carta</a>
+            </div>
+            <div class="hero-img hero-img-portada2">
+                <img src="img/portada2.png" alt="Dragón decorativo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="historia-section">
+        <div class="historia-content">
+            <div class="historia-text">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Fundado en 1985 por la familia Lung, El Puño de Dragón nació del sueño de compartir la auténtica cocina china con la comunidad local. 
+                    A lo largo de los años, hemos mantenido vivas las recetas tradicionales, transmitidas de generación en generación, y las hemos combinado con un servicio cálido y familiar.
+                    Cada plato cuenta una historia de dedicación, respeto y amor por la cultura gastronómica china.
+                </p>
+                <blockquote style="margin:1.2em 0; padding:1em; background:#fff8f0; border-left:4px solid #d32f2f; font-style:italic; color:#7c4d00;">
+                    “El Puño de Dragón honra la memoria de Pin-Chun-Ling, una cocinera visionaria que llegó al Perú en los años 60 con recetas ancestrales y un espíritu de hospitalidad. Su legado vive en cada plato, donde la primavera de sabores se encuentra con la calidez familiar.”
+                </blockquote>
+            </div>
+            <div class="historia-img">
+                <img src="img/fundador.jpg" alt="Fundadores del restaurante" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mision-vision-section">
+        <div class="mv-block">
+            <div class="mv-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#d32f2f"/><text x="50%" y="56%" text-anchor="middle" fill="#fff" font-size="18" font-family="Lato" font-weight="bold">M</text></svg>
+            </div>
+            <h3>Misión</h3>
+            <p>
+                Ofrecer experiencias culinarias auténticas y memorables, combinando ingredientes frescos y recetas tradicionales chinas en un ambiente acogedor y familiar.
+            </p>
+        </div>
+        <div class="mv-block">
+            <div class="mv-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#ffd700"/><text x="50%" y="56%" text-anchor="middle" fill="#b8860b" font-size="18" font-family="Lato" font-weight="bold">V</text></svg>
+            </div>
+            <h3>Visión</h3>
+            <p>
+                Ser el referente de la gastronomía china en la ciudad, transmitiendo valores de tradición, calidad y hospitalidad a cada generación de clientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Horarios -->
+    <section class="horarios-section">
+        <h2>Horarios de Atención</h2>
+        <table class="horarios-table">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>12:00 - 22:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>12:00 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>12:00 - 21:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Valoraciones y testimonios -->
+    <section class="testimonios-section">
+        <h2>Valoraciones de nuestros clientes</h2>
+        <div class="testimonios-grid">
+            <div class="testimonio">
+                <div class="testimonio-estrella">
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                </div>
+                <p>“El mejor chifa de la ciudad. La atención es excelente y los sabores son auténticos.”</p>
+                <span>- María G.</span>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-estrella">
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella off">&#9733;</span>
+                </div>
+                <p>“Ambiente familiar y platos deliciosos. Recomiendo el arroz chaufa especial.”</p>
+                <span>- Luis P.</span>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-estrella">
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella off">&#9733;</span>
+                </div>
+                <p>“La comida siempre llega caliente y fresca. ¡Volveré pronto!”</p>
+                <span>- Andrea T.</span>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-estrella">
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella off">&#9733;</span>
+                    <span class="estrella off">&#9733;</span>
+                </div>
+                <p>“Platos abundantes y precios justos. El tipakay es mi favorito.”</p>
+                <span>- Jorge R.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="galeria-section">
+        <h2>Galería</h2>
+        <div class="galeria-grid">
+            <img src="img/chaufa_especial.jpg" alt="Plato chino 1">
+            <img src="img/pollo_tipakay.jpg" alt="Plato chino 2">
+            <img src="img/rollitos_primavera.jpg" alt="Plato chino 3">
+            <img src="img/galeria4.jpg" alt="Plato chino 4">
+        </div>
+        <a href="galeria.html" class="ver-mas-carta">Ver toda la galería</a>
+    </section>
+
+    <!-- Carta (vistazo) -->
+    <section id="carta" class="carta-section">
+        <h2>Nuestra Carta</h2>
+        <div class="carta-categorias">
+            <div class="carta-cat">
+                <h3>Entradas</h3>
+                <ul>
+                    <li class="plato-oriental">Rollitos primavera</li>
+                    <li class="plato-oriental">Wantán frito</li>
+                </ul>
+                <a href="carta.html" class="ver-mas-carta">Ver toda la carta</a>
+            </div>
+            <div class="carta-cat">
+                <h3>Platos Fuertes</h3>
+                <ul>
+                    <li class="plato-oriental">Arroz chaufa especial</li>
+                    <li class="plato-oriental">Pollo tipakay</li>
+                </ul>
+                <a href="carta.html" class="ver-mas-carta">Ver toda la carta</a>
+            </div>
+            <div class="carta-cat">
+                <h3>Postres</h3>
+                <ul>
+                    <li class="plato-oriental">Helado de lichi</li>
+                    <li class="plato-oriental">Fruta fresca</li>
+                </ul>
+                <a href="carta.html" class="ver-mas-carta">Ver toda la carta</a>
+            </div>
+            <div class="carta-cat">
+                <h3>Bebidas</h3>
+                <ul>
+                    <li class="plato-oriental">Té jazmín</li>
+                    <li class="plato-oriental">Refresco de ciruela</li>
+                </ul>
+                <a href="carta.html" class="ver-mas-carta">Ver toda la carta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con mapa interactivo -->
+    <footer>
+        <div class="footer-contacto">
+            <p><strong>Teléfono:</strong> 555-123-4567</p>
+            <p><strong>Correo:</strong> contacto@elpuñodedragon.com</p>
+            <p><strong>Dirección:</strong> Lima, Villa Maria del Triunfo</p>
+        </div>
+        <div class="footer-mapa">
+            <!-- Mapa centrado en Lima, Perú -->
+            <iframe
+                src="https://www.google.com/maps?q=-12.1587,-76.9631&z=15&output=embed" 
+                width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook"><img src="img/facebook.svg" alt="Facebook" height="24"></a>
+            <a href="#" aria-label="Instagram"><img src="img/instagram.svg" alt="Instagram" height="24"></a>
+            <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" height="24"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <span>|</span>
+            <span>Desarrollado por <a href="mailto:jeremy16312928@gmail.com">JeremySG31</a></span>
+        </div>
+        <p class="footer-copy">&copy; 2025 El Puño de Dragón. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
