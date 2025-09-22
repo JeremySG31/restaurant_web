@@ -1,9 +1,9 @@
 // Scroll suave para navegación y cierre de menú móvil
-document.querySelectorAll<HTMLAnchorElement>('nav a').forEach(link => {
-  link.addEventListener('click', function (e: MouseEvent) {
-    const href = (this as HTMLAnchorElement).getAttribute('href');
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
     if (href && href.startsWith('#')) {
-      const target = document.querySelector<HTMLElement>(href);
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -13,7 +13,7 @@ document.querySelectorAll<HTMLAnchorElement>('nav a').forEach(link => {
 });
 
 // Fijar el header y agregar sombra al hacer scroll
-const header = document.querySelector<HTMLElement>('.header-fixed');
+const header = document.querySelector('.header-fixed');
 window.addEventListener('scroll', () => {
   if (header) {
     if (window.scrollY > 10) {
@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
   }
 
   // Parallax efecto en portada
-  const parallax = document.querySelector<HTMLImageElement>('.parallax img');
+  const parallax = document.querySelector('.parallax img');
   if (parallax) {
     const scrolled = window.scrollY;
     parallax.style.transform = `translateY(${scrolled * 0.2}px)`;
@@ -32,16 +32,16 @@ window.addEventListener('scroll', () => {
 });
 
 // Validación de formulario de reservas (si existe en la página)
-const reservationForm = document.getElementById('reservation-form') as HTMLFormElement | null;
+const reservationForm = document.getElementById('reservation-form');
 if (reservationForm) {
-  reservationForm.addEventListener('submit', function (event: Event) {
+  reservationForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const name = (document.getElementById('name') as HTMLInputElement).value.trim();
-    const phone = (document.getElementById('phone') as HTMLInputElement).value.trim();
-    const date = (document.getElementById('date') as HTMLInputElement).value;
-    const time = (document.getElementById('time') as HTMLInputElement).value;
-    const message = document.getElementById('confirmation-message') as HTMLElement;
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const message = document.getElementById('confirmation-message');
 
     // Validación básica
     if (!name || !phone || !date || !time) {
@@ -73,17 +73,17 @@ if (reservationForm) {
 }
 
 // Accesibilidad: resalta el enlace activo en el menú
-function setActiveMenu(): void {
+function setActiveMenu() {
   const sections = ['#inicio', '#historia', '#galeria', '#carta'];
   let current = sections[0];
   const scrollY = window.scrollY + 80;
 
   sections.forEach(s => {
-    const el = document.querySelector<HTMLElement>(s);
+    const el = document.querySelector(s);
     if (el && el.offsetTop <= scrollY) current = s;
   });
 
-  document.querySelectorAll<HTMLAnchorElement>('nav a').forEach(a => {
+  document.querySelectorAll('nav a').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === current);
   });
 }
